@@ -1,0 +1,16 @@
+p {
+    /* font-size: 16px; gør teksten p større */
+    font-size: 18px;
+    /* color: #ff1414; gør teksten p rød */
+    color: #ff1414;
+}
+
+h1 {
+    /* font-size: 32px; gør overskriften h1 større */
+    font-size: 32px;
+    /* color: #333; gør overskriften h1 mørkere */
+    color: #333;
+    /* font-family: Arial; gør overskriften h1 til Arial */
+    font-family: Arial;
+}
+
