@@ -1,3 +1,9 @@
+a {
+    /* text-decoration: none; fjerner understregning på links */
+    text-decoration: none;
+
+}
+
 p {
     /* font-size: 16px; gør teksten p større */
     font-size: 18px;
