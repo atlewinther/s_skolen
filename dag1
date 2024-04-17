@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!-- Angiver dokumenttypen som HTML -->
+<html> <!-- Starter HTML-dokumentet -->
+<head> <!-- Indeholder metadata om dokumentet -->
+    <link rel="stylesheet" href="style/style.css"> <!-- Link til ekstern CSS-fil -->
+    <title>Min HTML-side</title> <!-- Titlen på siden, der vises i browserens faneblad -->
+</head>
+<body bgcolor="#f61aa3"> <!-- Indeholder indholdet på siden -->
+    <h1>h1 Velkommen til min HTML-side!</h1> <!-- Overskriftsniveau 1 -->
+    <h2>h2 Velkommen til min HTML.side!</h2>
+    <h3>h3 Velkommen til min HTL-side!</h3>
+    <h4>h4 Velkommen til min HTML-side!</h4>
+    <h5>h5 Velkommen til min HTML-side!</h5>
+    <h6>h6 Velkommen til min HTML-side!</h6>
+
+    <p>Dette er en simpel HTML-side.</p> <!-- Paragraf -->
+
+    <br> <!-- Linjeskift -->
+    <a href="https://www.google.com">Google</a> <!-- Link til Google -->
+  
+</body>
+</html>
