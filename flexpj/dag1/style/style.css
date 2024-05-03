@@ -1,0 +1,120 @@
+/* body style */
+body, html {
+    margin: 0; /* Fjerner margin */
+    padding: 0; /* Fjerner padding */
+    height: 100%; /* 100% højde */
+}
+
+/* Style for navigations bar */
+.sidebar {
+    height: 100%; /* 100% højde */
+    width: 0; /* 0 bredde */
+    position: fixed; /* Position gør at elementet er fastgjort */
+    z-index: 1; /* Z-index gør at elementet er foran andre elementer */
+    top: 0; /* Top position gør at elementet er placeret øverst */
+    left: 0; /* Venstre position gør at elementet er placeret til venstre */
+    background-color: #111; /* Baggrundsfarve */
+    overflow-x: hidden; /* Skjuler elementet for at undgå at det overlapper */
+    transition: 0.5s; /* Transition effekt */
+    padding-top: 60px; /* Juster padding top til at undgå at indholdet overlapper headeren */
+}
+
+/* Style for navigations links */
+.sidebar a {
+    padding: 8px 8px 8px 32px; /* Padding */
+    text-decoration: none; /* Fjerner understregning */
+    font-size: 25px; /* Størrelse på font */
+    color: #818181; /* Farve på font */
+    display: block; /* Viser blok. En blok tager hele bredden af sin container */
+    transition: 0.3s; /* Transition effekt */
+}
+/* Style for navigationen links ved hover effekt */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+/* Style for lukkeknap */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style for hovedindhold i open button */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+/* Style for hovedindhold i open button ved hover effekt */
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style for hovedindhold */
+#main {
+    transition: margin-left .5s; /* Transition effekt som gør at elementet bevæger sig */
+    padding: 16px;
+}
+
+
+
+
+/* Left Box */
+.left-box {
+    width: 280px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 60px; /* Juster afstanden fra top til højden af headeren */
+    bottom: 0; /* Fyld højden af skærmen fra top til bund */
+}
+
+/* Container */
+/* beskrivelse: Containeren skal have en margin til venstre for at undgå overlapning med venstre boks */
+.container {
+    margin-left: 280px; /* Tilføj margin til højre for at undgå overlapning */
+    padding-top: 60px; /* Juster padding top til at undgå at indholdet overlapper headeren */
+}
+
+/* Style title */
+.title {
+    font-size: 24px; /* Størrelse på font */
+    margin-bottom: 20px; /* Afstand fra bunden */
+    text-align: center; /* Centrerer teksten */
+}
+/* Style for flexbox-wrapper */
+.flexbox-wrapper {
+    display: flex; /* Viser flexbox */
+    width: 100%; /* 100% bredde */
+}
+
+/* Style for flexbox-item */
+.flexbox-item {
+    flex: 1; /* Flexbox item */
+    background-color: #ffffff; /* Baggrundsfarve */
+    margin: 0 10px; /* Margin */
+    padding: 20px; /* Padding */
+   
+    border-radius: 5px; /* Radius på border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Skygge */
+}
+
+
+
+
+/* Media queries ved minimum width*/
+/* Skjuler #main og åben knap, når skærmen er større end tablettstørrelse */
+@media (min-width: 769px) {
+    .openbtn {
+        display: none; /* Skjuler knappen når skørmen er større end tablettstørrelse */
+    }
+    .main {
+        display: block; /* Viser #main når skærmen er større end tablettstørrelse */
+    }
+}
