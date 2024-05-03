@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skriv en titel</title>
+</head>
+<body>
+    <!-- mySidebar og main er til menuen -->
+    <div id="mySidebar" class="sidebar">
+        <!-- javascript:void(0) betyder at der ikke sker noget -->
+        <!-- onclick="closeNav()" betyder at vi lukker menuen når vi klikker på x -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Forside</a>
+        <a href="#">Hvem er XYZ</a>
+        <a href="#">Butik</a>
+        <a href="#">Ansøgninger</a>
+        <a hreg="#">Love & Regler</a>
+    </div>
+    <div id="main" class="main"> 
+        <!-- knappen til at åbne menuen -->
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        hall'j
+    </div>
+    <!-- Left Box -->
+    <div class="left-box">Left Box (ca 1/4)</div>
+
+    <!-- Container -->
+    <!-- beskriv hvad der sker i containeren -->
+    <!-- containeren er delt op i 2 flexbox-items -->
+    <div class="container">
+        <!-- Title -->
+        <div class="title">Flexbox Side med Titel</div>
+        <!-- flexbox-wrapper er en container til flexbox-items -->
+        <div class="flexbox-wrapper">
+            <!-- flexbox-item er en container til indholdet -->
+            <div class="flexbox-item">
+                <h2>Flexbox 1</h2>
+                <p>Dette er flexbox 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- denne flexbox-item er en container til det andet indholdet -->
+            <div class="flexbox-item">
+                <h2>Flexbox 2</h2>
+                <p>Dette er flexbox 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- hent main.js -->
+    <script src="main.js"></script>
+</body>
+</html>
