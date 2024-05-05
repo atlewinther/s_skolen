@@ -90,7 +90,7 @@ body, html {
 }
 /* Style for flexbox-wrapper */
 .flexbox-wrapper {
-    display: flex; /* Viser flexbox */
+    display: flex; /* Viser flexbox som gør at elementerne flyder vandret */
     width: 100%; /* 100% bredde */
 }
 
@@ -105,21 +105,25 @@ body, html {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Skygge */
 }
 
+
+/* Style for staff */
 .staff {
     margin: 10px;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap elementer gør at elementerne flyder nedad */
+    justify-content: space-between; /* Juster indholdet så det er mellemrum mellem elementerne */
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* Style for staff-item */
 .staff-item {
-    flex: 0 0 calc(33.333% - 20px);
+    /* udregn bredden af elementet hvor der er 20px mellemrum */
+    flex: 0 0 calc(33.333% - 20px); 
     margin-bottom: 20px;
 }
 
+/* Style for staff-card */
 .staff-card {
     padding: 10px;
     height: auto;
